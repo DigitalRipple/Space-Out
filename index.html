@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>Space Out</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+		}
+
+		.header {
+			padding: 80px;
+			text-align: center;
+			color: black;
+			background-image: url("data:image/jpeg;base64,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");
+			background-size: auto;
+		}
+
+		.header h1 {
+			font-size: 40px;
+		}
+
+		.navbar {
+			overflow: hidden;
+			background-color: #000;
+		}
+
+
+		.navbar a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 20px;
+			text-decoration: none;
+		}
+
+		.navbar a.right {
+			float: right;
+		}
+
+		/* Change color on hover */
+		.navbar a:hover {
+			background-image: url("https://media3.giphy.com/media/l3q2Xl2Rd8wZfMCaI/giphy.gif");
+			color: gray;
+		}
+
+		/* Column container */
+		.row {
+			display: -ms-flexbox;
+
+			display: flex;
+			-ms-flex-wrap: wrap;
+
+			flex-wrap: wrap;
+		}
+
+
+		.side {
+			-ms-flex: 30%;
+			flex: 30%;
+			background-color: black;
+			padding: 20px;
+			float: right;
+		}
+
+
+		.main {
+			-ms-flex: 70%;
+			flex: 70%;
+			background-color: white;
+			padding: 20px;
+		}
+
+		.img {
+			background-color: gray;
+			width: 100%;
+			height: 30px;
+			padding: 20px;
+		}
+
+
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: gray;
+		}
+
+		@media screen and (max-width: 700px) {
+			.row {
+				flex-direction: column;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			.navbar a {
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="header">
+		<h1>Welcome to Space Out.</h1>
+		<p>Where knowledge meets imagination.</p>
+	</div>
+
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="launch.html">New Launches</a>
+		<a href="comment.html">Comment</a>
+		<a class="right" href="https://digitalripple.github.io/SpaceOut/"> Log Out</a>
+	</div>
+
+	<div class="row">
+		<div class="side"
+			<h2 style="color:white">Latest news by NASA:</h2>
+			<br>
+			<br>
+			<a class="twitter-timeline" data-width="500" data-height="1200" data-theme="dark" href="https://twitter.com/NASA?ref_src=twsrc%5Etfw">Tweets by NASA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div class="main">
+    <h2>Space Facts.</h2>
+    <div class="img" style="height:325px;"><img style = "width:100%; height: 100%;" src = "https://cutewallpaper.org/21/space-ultrawide-wallpaper/Ultra-Wide-HD-Wallpaper-66+-images-.jpg"</img></div>
+		<br>
+    <p><b>1. SPACE IS COMPLETELY SILENT.</b> <br><br>
+There is no atmosphere in space, which means that sound has no medium or way to travel to be heard. Astronauts use radios to stay in communication while in space, since radio waves can still be sent and received.
+<br><br>
+<b>2. THE HOTTEST PLANET IN OUR SOLAR SYSTEM IS 450° C.</b>
+<br><br>
+Venus is the hottest planet in the solar system and has an average surface temperature of around 450° C. Interestingly, Venus is not the closest planet to the Sun – Mercury is closer but because Mercury has no atmosphere to regulate temperature it has a very large temperature fluctuation.
+<br><br>
+<b>3. THERE MAY BE LIFE ON MARS.</b>
+<br><br>
+Of all the planets in our solar system (apart from Earth), Mars is the one most likely to be hospitable to life. In 1986, NASA found what they thought may be fossils of microscopic living things in a rock recovered from Mars.</p>
+    <br>
+    <h2>What is space?</h2>
+    <div class="img" style="height:325px;"><img style = "width:100%; height: 100%;" src = "https://thumbs.gfycat.com/ZanyLiquidDutchshepherddog-max-1mb.gif"</img></div>
+    <p>Space is the boundless three-dimensional extent in which objects and events have relative position and direction. Physical space is often conceived in three linear dimensions, although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of space is considered to be of fundamental importance to an understanding of the physical universe. However, disagreement continues between philosophers over whether it is itself an entity, a relationship between entities, or part of a conceptual framework.
+</p>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <h2 style= "color: black;">Spread the word.</h2>
+</div>
+
+</body>
+</html>
